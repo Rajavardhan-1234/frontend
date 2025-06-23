@@ -1,13 +1,20 @@
 import { createBrowserRouter } from "react-router-dom";
 import Register from "../components/user/Register";
+import Login from "../components/user/Login";
+import Home from "../components/user/main/Home";
 
-
-
-
-let route=createBrowserRouter([
+let routes=createBrowserRouter([
     {
-    path:"/",
-    element:<Register></Register>
+        path:"/register",
+        element:<Register></Register>
+
+    },{
+        path:"/",
+        element:<Login></Login>
+    },{
+        path:"/home",
+        element:<Home></Home>
     }
 ])
- export default route
+
+export default routes
